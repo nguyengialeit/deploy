@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      new WOW().init();
+    </script>
+
+    <script src="./demo7.js"></script>
+  </head>
+  <body class="size-full">
+    <div
+      class="container flex items-center justify-between h-18 mt-[2000px] mb-[500px]"
+    >
+      <img
+        src="./images/logo.png"
+        alt=""
+        class="wow animate__animated animate__bounceIn"
+      />
+      <div id="desktopMenu" class="hidden md:flex gap-8">
+        <div>About</div>
+        <div>Services</div>
+        <div>Blog</div>
+        <div>Jobs</div>
+        <div>Contact</div>
+      </div>
+      <img
+        src="./images/ico_hamburger.webp"
+        alt=""
+        class="size-6 md:hidden"
+        onclick="toggleMobileMenu()"
+      />
+      <div
+        id="mobileMenuOverlay"
+        class="fixed bg-black opacity-50 top-0 left-0 size-full hidden"
+      ></div>
+      <div
+        id="mobileMenu"
+        class="fixed bg-white w-64 h-screen top-0 right-0 hidden flex-col items-end p-6 gap-4"
+      >
+        <img
+          src="./images/ico_hamburger.webp"
+          alt=""
+          class="size-6 mb-4"
+          onclick="toggleMobileMenu()"
+        />
+        <div>About</div>
+        <div>Services</div>
+        <div>Blog</div>
+        <div>Jobs</div>
+        <div>Contact</div>
+      </div>
+    </div>
+  </body>
+</html>
